@@ -48,6 +48,7 @@
 		DCC235F42708F3AF00E281CC /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235F32708F3AF00E281CC /* InboxViewController.swift */; };
 		DCC235F82708F4CD00E281CC /* InboxTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235F72708F4CD00E281CC /* InboxTileView.swift */; };
 		DCC235FA2708F4DE00E281CC /* InboxTileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC235F92708F4DE00E281CC /* InboxTileView.xib */; };
+		DCC235FC2709870600E281CC /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235FB2709870600E281CC /* RecommendationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		DCC235F32708F3AF00E281CC /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
 		DCC235F72708F4CD00E281CC /* InboxTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTileView.swift; sourceTree = "<group>"; };
 		DCC235F92708F4DE00E281CC /* InboxTileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InboxTileView.xib; sourceTree = "<group>"; };
+		DCC235FB2709870600E281CC /* RecommendationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				DCC235F32708F3AF00E281CC /* InboxViewController.swift */,
 				DCC235F72708F4CD00E281CC /* InboxTileView.swift */,
 				DCC235F92708F4DE00E281CC /* InboxTileView.xib */,
+				DCC235FB2709870600E281CC /* RecommendationsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC2359E2708087300E281CC /* ViewController.swift in Sources */,
+				DCC235FC2709870600E281CC /* RecommendationsViewController.swift in Sources */,
 				DCC235AF270815E400E281CC /* BaseViewController.swift in Sources */,
 				DCC235B12708165F00E281CC /* TinderViewController.swift in Sources */,
 				DCC2359A2708087300E281CC /* AppDelegate.swift in Sources */,

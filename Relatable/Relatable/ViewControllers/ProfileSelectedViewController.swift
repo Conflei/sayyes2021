@@ -26,13 +26,13 @@ class ProfileSelectedViewController: BaseViewController {
         myButton.frame = CGRect(x: view.frame.width/2.0 - 130, y: view.frame.height - 100, width: 260, height: 50)
        // Set text on button
         myButton.setTitle("Record Message for Diana", for: .normal)
-        myButton.backgroundColor = .green
+        myButton.backgroundColor = StaticData.colorForName(StaticData.colors[6])
        
        // Set button action
         myButton.addTarget(self, action: #selector(goToRecord), for: .touchUpInside)
         
         myButton.layer.cornerRadius = 20
-        myButton.layer.shadowRadius = 5
+        myButton.layer.shadowRadius = 3
         myButton.layer.shadowOpacity = 0.6
         myButton.tintColor = .white
         myButton.titleLabel?.font = UIFont(name: "GothamSSm-Bold", size: 14)
@@ -47,7 +47,7 @@ class ProfileSelectedViewController: BaseViewController {
     @objc func goToRecord()
     {
         print("GoToRecord")
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CameraViewController") as! CameraViewController
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RecommendationsViewController") as! RecommendationsViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

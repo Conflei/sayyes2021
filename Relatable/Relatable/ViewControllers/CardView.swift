@@ -10,10 +10,14 @@ import UIKit
 class CardView: UIView {
     
     @IBOutlet weak var bgPic: UIImageView!
-    @IBOutlet weak var title: UILabel!
     @IBOutlet weak var descr: UILabel!
+    @IBOutlet weak var title: UILabel!
     
     let nibName = "CardContentView"
+    
+    var images: [String] = ["ivon","walter","dianaa", "felixi"]
+    var names: [String]  = ["Ivon","Walter Jr.", "Diana", "Felix"]
+    var descriptions: [String] = ["Recently had an eye infection","Walter Jr. has cerebral palsy", "Recently diagnosed with Leukaemia", "He broke his arm and is now wearing a cast"]
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,10 +29,12 @@ class CardView: UIView {
         setup()
     }
 
-    func setup() {
+    func setup(_ pIndex: Int = 0) {
         
         
-        //self.bgPic.image = sdad
+        //
+        //
+        //
         
         // Shadow
         layer.shadowColor = UIColor.black.cgColor
@@ -42,10 +48,11 @@ class CardView: UIView {
         layer.cornerRadius = 10.0;
     }
     
-    func fillInfo(_ bgName: String = "", _ title: String = "", _ descr: String = "")
+    func fillInfo(_ pIndex: Int)
     {
-        self.title.text = title
-        self.descr.text = descr
+        self.title.text = names[pIndex]
+        self.descr.text = descriptions[pIndex]
+        self.bgPic.image = UIImage(named: images[pIndex])
     }
 }
 

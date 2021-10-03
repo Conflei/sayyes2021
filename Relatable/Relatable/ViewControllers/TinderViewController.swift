@@ -12,6 +12,7 @@ class TinderViewController: BaseViewController {
     
     @IBOutlet weak var swipeableView: ZLSwipeableView!
     
+    var currentIndex : Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,10 +50,13 @@ class TinderViewController: BaseViewController {
         let cardView = CardView(frame: swipeableView.bounds)
         
         
-        let contentView = Bundle.main.loadNibNamed("CardContentView", owner: self, options: nil)?.first! as! UIView
+        let contentView = Bundle.main.loadNibNamed("CardContentView", owner: self, options: nil)?.first! as! CardView
         contentView.translatesAutoresizingMaskIntoConstraints = false
         contentView.backgroundColor = cardView.backgroundColor
-        
+        contentView.fillInfo(currentIndex)
+        currentIndex+=1
+        if currentIndex == 4
+        {currentIndex = 0}
         cardView.addSubview(contentView)
         //contentView.frame = self.swipeableView.bounds
         // This is important:
@@ -64,7 +68,7 @@ class TinderViewController: BaseViewController {
         cardView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[contentView(height)]", options: .alignAllLeft, metrics: metrics, views: views))
         
         
-    
+        //cardView.fillInfo(currentIndex)
         return cardView
     }
     
