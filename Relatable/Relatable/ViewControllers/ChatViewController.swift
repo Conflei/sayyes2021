@@ -55,7 +55,7 @@ class ChatViewController: BaseViewController, UITextFieldDelegate, UITableViewDe
         if StaticData.parent {
             if command[0] == "B"
             {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "SenderTableViewCell") as! SenderTableViewCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: "ReceiverTableViewCell") as! ReceiverTableViewCell
                 if command[1] == "T"
                 {
                     cell.message.text = String(command[2])
@@ -75,7 +75,7 @@ class ChatViewController: BaseViewController, UITextFieldDelegate, UITableViewDe
                 return cell
             }
             
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ReceiverTableViewCell") as! ReceiverTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SenderTableViewCell") as! SenderTableViewCell
             
             if command[1] == "T"
             {
@@ -97,7 +97,7 @@ class ChatViewController: BaseViewController, UITextFieldDelegate, UITableViewDe
         
         if command[0] == "D"
         {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "SenderTableViewCell") as! SenderTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ReceiverTableViewCell") as! ReceiverTableViewCell
             if command[1] == "T"
             {
                 cell.message.text = String(command[2])
@@ -117,7 +117,7 @@ class ChatViewController: BaseViewController, UITextFieldDelegate, UITableViewDe
             return cell
         }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ReceiverTableViewCell") as! ReceiverTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SenderTableViewCell") as! SenderTableViewCell
         
         if command[1] == "T"
         {
@@ -214,8 +214,11 @@ class ChatViewController: BaseViewController, UITextFieldDelegate, UITableViewDe
         textField.text = ""
     }
     
-    
-    
+    @IBAction func goToInbox(_ sender: Any) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InboxViewController") as! InboxViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
 
 }
 

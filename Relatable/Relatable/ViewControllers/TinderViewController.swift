@@ -16,7 +16,24 @@ class TinderViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        /*swipeableView.didTap = {view, location in
+            self.goToDetail()
+        }*/
+        
+        swipeableView.didSwipe = {view, direction, vector in
+            if direction == .Right
+            {
+                self.goToDetail()
+            }
+            print("Did swipe view in direction: \(direction), vector: \(vector)")
+        }
         // Do any additional setup after loading the view.
+    }
+    
+    func goToDetail()
+    {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileSelectedViewController") as! ProfileSelectedViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func viewDidLayoutSubviews() {
@@ -52,6 +69,7 @@ class TinderViewController: BaseViewController {
     }
     
     @IBAction func goToInbox(_ sender: Any) {
+        print("Go To Inbox")
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InboxViewController") as! InboxViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }

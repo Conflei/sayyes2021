@@ -31,10 +31,15 @@ class ViewController: BaseViewController {
     }
     
     @IBAction func parentLogin(_ sender: Any) {
-        
+        StaticData.parent = true
+        StaticData.convoPieces = StaticData.shared.conversation.split(separator: "-")
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InboxViewController") as! InboxViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func supporterLogin(_ sender: Any) {
+        StaticData.parent = false
+        StaticData.convoPieces = StaticData.shared.conversation.split(separator: "-")
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TinderViewController") as! TinderViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }

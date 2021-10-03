@@ -81,6 +81,16 @@ class CameraViewController: BaseViewController{
             mirrored = true
         }
         
+        //buttonAction.isHidden = true
+        buttonAction.setTitle("Preparing Camera...", for: .normal)
+        buttonAction.isUserInteractionEnabled = false
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute:
+                                        {
+            self.buttonAction.setTitle("Record", for: .normal)
+            self.buttonAction.isHidden = false
+            self.buttonAction.isUserInteractionEnabled = true
+        })
        
         
         print("VIEW DID APPEAR")

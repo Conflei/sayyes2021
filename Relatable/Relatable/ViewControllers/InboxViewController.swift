@@ -37,10 +37,16 @@ class InboxViewController: BaseViewController {
             
         }
         
-        //let gest = UIGestureRecognizer(target: <#T##Any?#>, action: <#T##Selector?#>)
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapImageView(_:)))
+
+            // Add Tap Gesture Recognizer
+            firstTile.addGestureRecognizer(tapGestureRecognizer)
     }
     
+    @objc private func didTapImageView(_ sender: UITapGestureRecognizer) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChatViewController") as! ChatViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
-   
 
 }
