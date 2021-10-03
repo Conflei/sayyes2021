@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Relatable/Pods-Relatable-frameworks.sh
+${BUILT_PRODUCTS_DIR}/NextLevel/NextLevel.framework
+${BUILT_PRODUCTS_DIR}/UIColor+FlatColors/UIColor_FlatColors.framework
+${BUILT_PRODUCTS_DIR}/ZLSwipeableViewSwift/ZLSwipeableViewSwift.framework

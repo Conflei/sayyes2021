@@ -1,0 +1,24 @@
+PODS:
+  - NextLevel (0.16.5)
+  - "UIColor+FlatColors (0.0.2)"
+  - ZLSwipeableViewSwift (0.0.9)
+
+DEPENDENCIES:
+  - NextLevel (~> 0.16.3)
+  - "UIColor+FlatColors"
+  - ZLSwipeableViewSwift
+
+SPEC REPOS:
+  trunk:
+    - NextLevel
+    - "UIColor+FlatColors"
+    - ZLSwipeableViewSwift
+
+SPEC CHECKSUMS:
+  NextLevel: b9b9b65c7c6dc83f109b2c67aa362593108335a5
+  "UIColor+FlatColors": 6c699df7a575281794c688c64cee6c44fd1f93b4
+  ZLSwipeableViewSwift: 0d4f2061d36e6daee2b3da8977e0906feee0383d
+
+PODFILE CHECKSUM: 7d075382cc0e025eeca6e85c664aab1267b03bc6
+
+COCOAPODS: 1.11.2

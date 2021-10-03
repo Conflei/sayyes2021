@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="SenderTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="SenderTableViewCell" id="KGk-i7-Jjw" customClass="SenderTableViewCell" customModule="Relatable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ve-Lc-svo">
+                        <rect key="frame" x="54" y="10" width="258" height="59"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a sender message" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYD-cH-fnk">
+                                <rect key="frame" x="1" y="13" width="242" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="7SZ-t0-RBz"/>
+                                    <constraint firstAttribute="height" constant="33" id="iO4-yz-oWR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2E-PU-p52">
+                                <rect key="frame" x="8" y="12" width="36" height="34"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="play.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="btnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wEg-Aj-RKv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gYD-cH-fnk" secondAttribute="trailing" constant="15" id="1FY-74-FOQ"/>
+                            <constraint firstAttribute="trailing" secondItem="b2E-PU-p52" secondAttribute="trailing" constant="214" id="B6k-Xg-l2Z"/>
+                            <constraint firstAttribute="width" constant="258" id="BCO-4W-mYt"/>
+                            <constraint firstItem="gYD-cH-fnk" firstAttribute="centerY" secondItem="4ve-Lc-svo" secondAttribute="centerY" id="ad8-K4-b8S"/>
+                            <constraint firstItem="b2E-PU-p52" firstAttribute="leading" secondItem="4ve-Lc-svo" secondAttribute="leading" constant="8" id="dVg-eH-59a"/>
+                            <constraint firstItem="b2E-PU-p52" firstAttribute="top" secondItem="4ve-Lc-svo" secondAttribute="top" constant="12" id="seM-v1-tfO"/>
+                            <constraint firstAttribute="bottom" secondItem="b2E-PU-p52" secondAttribute="bottom" constant="13" id="tie-QS-IPZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="4ve-Lc-svo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="B2q-Go-Agk"/>
+                    <constraint firstAttribute="trailing" secondItem="4ve-Lc-svo" secondAttribute="trailing" constant="8" id="INb-xs-6sx"/>
+                    <constraint firstAttribute="bottom" secondItem="4ve-Lc-svo" secondAttribute="bottom" constant="11" id="XeL-0s-iHY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bg" destination="4ve-Lc-svo" id="nbX-y0-EFO"/>
+                <outlet property="message" destination="gYD-cH-fnk" id="AtO-dZ-wrm"/>
+                <outlet property="playBtn" destination="b2E-PU-p52" id="V6C-q7-O5s"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="91.741071428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

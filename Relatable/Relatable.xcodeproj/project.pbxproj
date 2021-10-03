@@ -7,15 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36A5E4595EFDB16C331DA824 /* Pods_Relatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894FBFCD26AB3ABE935ADDD8 /* Pods_Relatable.framework */; };
 		DCC2359A2708087300E281CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235992708087300E281CC /* AppDelegate.swift */; };
 		DCC2359C2708087300E281CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC2359B2708087300E281CC /* SceneDelegate.swift */; };
 		DCC2359E2708087300E281CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC2359D2708087300E281CC /* ViewController.swift */; };
 		DCC235A12708087300E281CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC2359F2708087300E281CC /* Main.storyboard */; };
 		DCC235A32708087600E281CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC235A22708087600E281CC /* Assets.xcassets */; };
 		DCC235A62708087600E281CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC235A42708087600E281CC /* LaunchScreen.storyboard */; };
+		DCC235AF270815E400E281CC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235AE270815E400E281CC /* BaseViewController.swift */; };
+		DCC235B12708165F00E281CC /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235B02708165F00E281CC /* TinderViewController.swift */; };
+		DCC235B32708178D00E281CC /* CardContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC235B22708178D00E281CC /* CardContentView.xib */; };
+		DCC235B527081B9700E281CC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235B427081B9700E281CC /* CardView.swift */; };
+		DCC235B827082D9500E281CC /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235B727082D9500E281CC /* Parent.swift */; };
+		DCC235BA27082D9F00E281CC /* Supporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235B927082D9F00E281CC /* Supporter.swift */; };
+		DCC235BC2708317200E281CC /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235BB2708317200E281CC /* StaticData.swift */; };
+		DCC235BE270831F000E281CC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235BD270831F000E281CC /* ChatViewController.swift */; };
+		DCC235C0270833D300E281CC /* ProfileSelectedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235BF270833D300E281CC /* ProfileSelectedDetailViewController.swift */; };
+		DCC235C2270837ED00E281CC /* ProfileSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235C1270837ED00E281CC /* ProfileSelectedViewController.swift */; };
+		DCC235D327083A5B00E281CC /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = DCC235C527083A5B00E281CC /* Gotham-Black.otf */; };
+		DCC235D427083A5B00E281CC /* GothamXNarrow-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = DCC235C627083A5B00E281CC /* GothamXNarrow-Book.otf */; };
+		DCC235D527083A5B00E281CC /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = DCC235C727083A5B00E281CC /* Gotham-Book.otf */; };
+		DCC235D627083A5B00E281CC /* GothamSSm-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCC235C827083A5B00E281CC /* GothamSSm-Medium.ttf */; };
+		DCC235D727083A5B00E281CC /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DCC235C927083A5B00E281CC /* Gotham-Bold.otf */; };
+		DCC235D827083A5B00E281CC /* GothamSSm-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DCC235CA27083A5B00E281CC /* GothamSSm-Bold.otf */; };
+		DCC235D927083A5B00E281CC /* Gotham-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DCC235CB27083A5B00E281CC /* Gotham-LightItalic.otf */; };
+		DCC235DA27083A5B00E281CC /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DCC235CC27083A5B00E281CC /* Gotham-Light.otf */; };
+		DCC235DB27083A5B00E281CC /* Gotham-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DCC235CD27083A5B00E281CC /* Gotham-BoldItalic.otf */; };
+		DCC235DC27083A5B00E281CC /* GothamXNarrow-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DCC235CE27083A5B00E281CC /* GothamXNarrow-BookItalic.otf */; };
+		DCC235DD27083A5B00E281CC /* Gotham-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DCC235CF27083A5B00E281CC /* Gotham-BookItalic.otf */; };
+		DCC235DE27083A5B00E281CC /* GothamSSm-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCC235D027083A5B00E281CC /* GothamSSm-Light.ttf */; };
+		DCC235DF27083A5B00E281CC /* GothamSSm-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCC235D127083A5B00E281CC /* GothamSSm-Book.ttf */; };
+		DCC235E027083A5B00E281CC /* Gotham-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DCC235D227083A5B00E281CC /* Gotham-BlackItalic.otf */; };
+		DCC235E22708423E00E281CC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235E12708423E00E281CC /* CameraViewController.swift */; };
+		DCC235E42708565200E281CC /* PlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235E32708565200E281CC /* PlaybackViewController.swift */; };
+		DCC235E6270867B200E281CC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235E5270867B200E281CC /* Helpers.swift */; };
+		DCC235ED2708BA6F00E281CC /* SenderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235EB2708BA6F00E281CC /* SenderTableViewCell.swift */; };
+		DCC235EE2708BA6F00E281CC /* SenderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC235EC2708BA6F00E281CC /* SenderTableViewCell.xib */; };
+		DCC235F12708BA7D00E281CC /* ReceiverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235EF2708BA7D00E281CC /* ReceiverTableViewCell.swift */; };
+		DCC235F22708BA7D00E281CC /* ReceiverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC235F02708BA7D00E281CC /* ReceiverTableViewCell.xib */; };
+		DCC235F42708F3AF00E281CC /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235F32708F3AF00E281CC /* InboxViewController.swift */; };
+		DCC235F82708F4CD00E281CC /* InboxTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC235F72708F4CD00E281CC /* InboxTileView.swift */; };
+		DCC235FA2708F4DE00E281CC /* InboxTileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC235F92708F4DE00E281CC /* InboxTileView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A9D2CD460D96C0394BF2641 /* Pods-Relatable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relatable.release.xcconfig"; path = "Target Support Files/Pods-Relatable/Pods-Relatable.release.xcconfig"; sourceTree = "<group>"; };
+		894FBFCD26AB3ABE935ADDD8 /* Pods_Relatable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Relatable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4653F5C52B7BB8662352E52 /* Pods-Relatable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relatable.debug.xcconfig"; path = "Target Support Files/Pods-Relatable/Pods-Relatable.debug.xcconfig"; sourceTree = "<group>"; };
 		DCC235962708087300E281CC /* Relatable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relatable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC235992708087300E281CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCC2359B2708087300E281CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +62,40 @@
 		DCC235A22708087600E281CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCC235A52708087600E281CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCC235A72708087600E281CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC235AE270815E400E281CC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DCC235B02708165F00E281CC /* TinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
+		DCC235B22708178D00E281CC /* CardContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardContentView.xib; sourceTree = "<group>"; };
+		DCC235B427081B9700E281CC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DCC235B727082D9500E281CC /* Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
+		DCC235B927082D9F00E281CC /* Supporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supporter.swift; sourceTree = "<group>"; };
+		DCC235BB2708317200E281CC /* StaticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
+		DCC235BD270831F000E281CC /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		DCC235BF270833D300E281CC /* ProfileSelectedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSelectedDetailViewController.swift; sourceTree = "<group>"; };
+		DCC235C1270837ED00E281CC /* ProfileSelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSelectedViewController.swift; sourceTree = "<group>"; };
+		DCC235C527083A5B00E281CC /* Gotham-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Black.otf"; sourceTree = "<group>"; };
+		DCC235C627083A5B00E281CC /* GothamXNarrow-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamXNarrow-Book.otf"; sourceTree = "<group>"; };
+		DCC235C727083A5B00E281CC /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Book.otf"; sourceTree = "<group>"; };
+		DCC235C827083A5B00E281CC /* GothamSSm-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamSSm-Medium.ttf"; sourceTree = "<group>"; };
+		DCC235C927083A5B00E281CC /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
+		DCC235CA27083A5B00E281CC /* GothamSSm-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamSSm-Bold.otf"; sourceTree = "<group>"; };
+		DCC235CB27083A5B00E281CC /* Gotham-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-LightItalic.otf"; sourceTree = "<group>"; };
+		DCC235CC27083A5B00E281CC /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
+		DCC235CD27083A5B00E281CC /* Gotham-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-BoldItalic.otf"; sourceTree = "<group>"; };
+		DCC235CE27083A5B00E281CC /* GothamXNarrow-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamXNarrow-BookItalic.otf"; sourceTree = "<group>"; };
+		DCC235CF27083A5B00E281CC /* Gotham-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-BookItalic.otf"; sourceTree = "<group>"; };
+		DCC235D027083A5B00E281CC /* GothamSSm-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamSSm-Light.ttf"; sourceTree = "<group>"; };
+		DCC235D127083A5B00E281CC /* GothamSSm-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamSSm-Book.ttf"; sourceTree = "<group>"; };
+		DCC235D227083A5B00E281CC /* Gotham-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-BlackItalic.otf"; sourceTree = "<group>"; };
+		DCC235E12708423E00E281CC /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		DCC235E32708565200E281CC /* PlaybackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackViewController.swift; sourceTree = "<group>"; };
+		DCC235E5270867B200E281CC /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		DCC235EB2708BA6F00E281CC /* SenderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderTableViewCell.swift; sourceTree = "<group>"; };
+		DCC235EC2708BA6F00E281CC /* SenderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SenderTableViewCell.xib; sourceTree = "<group>"; };
+		DCC235EF2708BA7D00E281CC /* ReceiverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverTableViewCell.swift; sourceTree = "<group>"; };
+		DCC235F02708BA7D00E281CC /* ReceiverTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiverTableViewCell.xib; sourceTree = "<group>"; };
+		DCC235F32708F3AF00E281CC /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		DCC235F72708F4CD00E281CC /* InboxTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTileView.swift; sourceTree = "<group>"; };
+		DCC235F92708F4DE00E281CC /* InboxTileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InboxTileView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +103,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A5E4595EFDB16C331DA824 /* Pods_Relatable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		324A6CCDC49DD80B846BD076 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				894FBFCD26AB3ABE935ADDD8 /* Pods_Relatable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3318280829B9B362A9B8089E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4653F5C52B7BB8662352E52 /* Pods-Relatable.debug.xcconfig */,
+				2A9D2CD460D96C0394BF2641 /* Pods-Relatable.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DCC2358D2708087300E281CC = {
 			isa = PBXGroup;
 			children = (
 				DCC235982708087300E281CC /* Relatable */,
 				DCC235972708087300E281CC /* Products */,
+				3318280829B9B362A9B8089E /* Pods */,
+				324A6CCDC49DD80B846BD076 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +148,9 @@
 		DCC235982708087300E281CC /* Relatable */ = {
 			isa = PBXGroup;
 			children = (
+				DCC235C327083A5000E281CC /* Resources */,
+				DCC235B627082D7700E281CC /* Models */,
+				DCC235AD27080D3F00E281CC /* ViewControllers */,
 				DCC235992708087300E281CC /* AppDelegate.swift */,
 				DCC2359B2708087300E281CC /* SceneDelegate.swift */,
 				DCC2359D2708087300E281CC /* ViewController.swift */,
@@ -67,6 +162,69 @@
 			path = Relatable;
 			sourceTree = "<group>";
 		};
+		DCC235AD27080D3F00E281CC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCC235AE270815E400E281CC /* BaseViewController.swift */,
+				DCC235B02708165F00E281CC /* TinderViewController.swift */,
+				DCC235B22708178D00E281CC /* CardContentView.xib */,
+				DCC235B427081B9700E281CC /* CardView.swift */,
+				DCC235BD270831F000E281CC /* ChatViewController.swift */,
+				DCC235BF270833D300E281CC /* ProfileSelectedDetailViewController.swift */,
+				DCC235C1270837ED00E281CC /* ProfileSelectedViewController.swift */,
+				DCC235E12708423E00E281CC /* CameraViewController.swift */,
+				DCC235E32708565200E281CC /* PlaybackViewController.swift */,
+				DCC235EB2708BA6F00E281CC /* SenderTableViewCell.swift */,
+				DCC235EC2708BA6F00E281CC /* SenderTableViewCell.xib */,
+				DCC235EF2708BA7D00E281CC /* ReceiverTableViewCell.swift */,
+				DCC235F02708BA7D00E281CC /* ReceiverTableViewCell.xib */,
+				DCC235F32708F3AF00E281CC /* InboxViewController.swift */,
+				DCC235F72708F4CD00E281CC /* InboxTileView.swift */,
+				DCC235F92708F4DE00E281CC /* InboxTileView.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DCC235B627082D7700E281CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCC235B727082D9500E281CC /* Parent.swift */,
+				DCC235B927082D9F00E281CC /* Supporter.swift */,
+				DCC235BB2708317200E281CC /* StaticData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCC235C327083A5000E281CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DCC235C427083A5B00E281CC /* Gotham_OTF_Fonts */,
+				DCC235E5270867B200E281CC /* Helpers.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DCC235C427083A5B00E281CC /* Gotham_OTF_Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DCC235C527083A5B00E281CC /* Gotham-Black.otf */,
+				DCC235C627083A5B00E281CC /* GothamXNarrow-Book.otf */,
+				DCC235C727083A5B00E281CC /* Gotham-Book.otf */,
+				DCC235C827083A5B00E281CC /* GothamSSm-Medium.ttf */,
+				DCC235C927083A5B00E281CC /* Gotham-Bold.otf */,
+				DCC235CA27083A5B00E281CC /* GothamSSm-Bold.otf */,
+				DCC235CB27083A5B00E281CC /* Gotham-LightItalic.otf */,
+				DCC235CC27083A5B00E281CC /* Gotham-Light.otf */,
+				DCC235CD27083A5B00E281CC /* Gotham-BoldItalic.otf */,
+				DCC235CE27083A5B00E281CC /* GothamXNarrow-BookItalic.otf */,
+				DCC235CF27083A5B00E281CC /* Gotham-BookItalic.otf */,
+				DCC235D027083A5B00E281CC /* GothamSSm-Light.ttf */,
+				DCC235D127083A5B00E281CC /* GothamSSm-Book.ttf */,
+				DCC235D227083A5B00E281CC /* Gotham-BlackItalic.otf */,
+			);
+			path = Gotham_OTF_Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCC235AA2708087600E281CC /* Build configuration list for PBXNativeTarget "Relatable" */;
 			buildPhases = (
+				F7708BCF28E43FFE37737A75 /* [CP] Check Pods Manifest.lock */,
 				DCC235922708087300E281CC /* Sources */,
 				DCC235932708087300E281CC /* Frameworks */,
 				DCC235942708087300E281CC /* Resources */,
+				C4C2279B83378F0AF4235591 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,13 +285,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC235DD27083A5B00E281CC /* Gotham-BookItalic.otf in Resources */,
+				DCC235E027083A5B00E281CC /* Gotham-BlackItalic.otf in Resources */,
+				DCC235B32708178D00E281CC /* CardContentView.xib in Resources */,
+				DCC235D927083A5B00E281CC /* Gotham-LightItalic.otf in Resources */,
+				DCC235D627083A5B00E281CC /* GothamSSm-Medium.ttf in Resources */,
+				DCC235D827083A5B00E281CC /* GothamSSm-Bold.otf in Resources */,
+				DCC235DC27083A5B00E281CC /* GothamXNarrow-BookItalic.otf in Resources */,
 				DCC235A62708087600E281CC /* LaunchScreen.storyboard in Resources */,
+				DCC235DE27083A5B00E281CC /* GothamSSm-Light.ttf in Resources */,
+				DCC235EE2708BA6F00E281CC /* SenderTableViewCell.xib in Resources */,
+				DCC235F22708BA7D00E281CC /* ReceiverTableViewCell.xib in Resources */,
 				DCC235A32708087600E281CC /* Assets.xcassets in Resources */,
+				DCC235D327083A5B00E281CC /* Gotham-Black.otf in Resources */,
+				DCC235DF27083A5B00E281CC /* GothamSSm-Book.ttf in Resources */,
+				DCC235D427083A5B00E281CC /* GothamXNarrow-Book.otf in Resources */,
+				DCC235DA27083A5B00E281CC /* Gotham-Light.otf in Resources */,
+				DCC235D727083A5B00E281CC /* Gotham-Bold.otf in Resources */,
+				DCC235DB27083A5B00E281CC /* Gotham-BoldItalic.otf in Resources */,
+				DCC235FA2708F4DE00E281CC /* InboxTileView.xib in Resources */,
+				DCC235D527083A5B00E281CC /* Gotham-Book.otf in Resources */,
 				DCC235A12708087300E281CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C4C2279B83378F0AF4235591 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Relatable/Pods-Relatable-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Relatable/Pods-Relatable-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Relatable/Pods-Relatable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7708BCF28E43FFE37737A75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Relatable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCC235922708087300E281CC /* Sources */ = {
@@ -139,8 +359,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC2359E2708087300E281CC /* ViewController.swift in Sources */,
+				DCC235AF270815E400E281CC /* BaseViewController.swift in Sources */,
+				DCC235B12708165F00E281CC /* TinderViewController.swift in Sources */,
 				DCC2359A2708087300E281CC /* AppDelegate.swift in Sources */,
+				DCC235E22708423E00E281CC /* CameraViewController.swift in Sources */,
+				DCC235E42708565200E281CC /* PlaybackViewController.swift in Sources */,
+				DCC235B527081B9700E281CC /* CardView.swift in Sources */,
+				DCC235BC2708317200E281CC /* StaticData.swift in Sources */,
+				DCC235ED2708BA6F00E281CC /* SenderTableViewCell.swift in Sources */,
 				DCC2359C2708087300E281CC /* SceneDelegate.swift in Sources */,
+				DCC235F12708BA7D00E281CC /* ReceiverTableViewCell.swift in Sources */,
+				DCC235C2270837ED00E281CC /* ProfileSelectedViewController.swift in Sources */,
+				DCC235BA27082D9F00E281CC /* Supporter.swift in Sources */,
+				DCC235F42708F3AF00E281CC /* InboxViewController.swift in Sources */,
+				DCC235F82708F4CD00E281CC /* InboxTileView.swift in Sources */,
+				DCC235BE270831F000E281CC /* ChatViewController.swift in Sources */,
+				DCC235B827082D9500E281CC /* Parent.swift in Sources */,
+				DCC235E6270867B200E281CC /* Helpers.swift in Sources */,
+				DCC235C0270833D300E281CC /* ProfileSelectedDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +520,7 @@
 		};
 		DCC235AB2708087600E281CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4653F5C52B7BB8662352E52 /* Pods-Relatable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,11 +529,17 @@
 				DEVELOPMENT_TEAM = 47H7UA49VR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Relatable/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "pull videos";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Record your messages";
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "save videos";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record your messages";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Pull videos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +555,7 @@
 		};
 		DCC235AC2708087600E281CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A9D2CD460D96C0394BF2641 /* Pods-Relatable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,11 +564,17 @@
 				DEVELOPMENT_TEAM = 47H7UA49VR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Relatable/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "pull videos";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Record your messages";
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "save videos";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record your messages";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Pull videos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
