@@ -200,11 +200,11 @@ class ChatViewController: BaseViewController, UITextFieldDelegate, UITableViewDe
         var newInput: String = ""
         if StaticData.parent
         {
-            newInput = "-B=T=\(textField.text!)"
+            newInput = "-D=T=\(textField.text!)"
         }
         else
         {
-            newInput = "-D=T=\(textField.text! )"
+            newInput = "-B=T=\(textField.text! )"
         }
         
         StaticData.shared.conversation.append(newInput)

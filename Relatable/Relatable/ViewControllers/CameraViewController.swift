@@ -41,6 +41,21 @@ class CameraViewController: BaseViewController{
         NotificationCenter.default.addObserver(self, selector: #selector(self.rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
         checkAuthAndStart()
        refreshFeed()
+        
+       /* do {
+            try NextLevel.shared.record()
+        } catch {
+            
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now()+1.0, execute: {
+            NextLevel.shared.pause(withCompletionHandler: {
+                if NextLevel.shared.session?.clips.count ?? 0 > 0
+                {
+                    NextLevel.shared.session?.removeAllClips()
+                }
+            })
+        })*/
+        
     }
     
     @objc func rotated() {
@@ -85,12 +100,18 @@ class CameraViewController: BaseViewController{
         buttonAction.setTitle("Preparing Camera...", for: .normal)
         buttonAction.isUserInteractionEnabled = false
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute:
-                                        {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now()+2, execute: {
             self.buttonAction.setTitle("Record", for: .normal)
             self.buttonAction.isHidden = false
             self.buttonAction.isUserInteractionEnabled = true
         })
+        
+        
+        
+                                        
+
+    
        
         
         print("VIEW DID APPEAR")
@@ -153,6 +174,7 @@ class CameraViewController: BaseViewController{
     @IBAction func recorderAction(_ sender: Any) {
         if recording
         {
+            print("Stop Recording")
             DispatchQueue.main.asyncAfter(deadline: .now()+2.0, execute: {
                 NextLevel.shared.pause(withCompletionHandler: self.saveVideoAndSend)
             })
@@ -161,7 +183,7 @@ class CameraViewController: BaseViewController{
         }
         else
         {
-            
+            print("Start Recording")
             do {
                 try NextLevel.shared.record()
             } catch {

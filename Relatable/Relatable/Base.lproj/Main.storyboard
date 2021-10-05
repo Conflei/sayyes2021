@@ -325,7 +325,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5NC-Ii-Sdy">
-                                <rect key="frame" x="0.0" y="100" width="390" height="650"/>
+                                <rect key="frame" x="0.0" y="120" width="390" height="650"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="650" id="MLC-XT-jlB"/>
@@ -369,7 +369,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdj-zY-EmJ">
-                                <rect key="frame" x="30" y="52" width="40" height="40"/>
+                                <rect key="frame" x="30" y="72" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="fLT-Dh-WS3"/>
                                     <constraint firstAttribute="height" constant="40" id="i6M-VN-IVG"/>
@@ -390,7 +390,7 @@
                             <constraint firstItem="5NC-Ii-Sdy" firstAttribute="top" secondItem="Kdj-zY-EmJ" secondAttribute="bottom" constant="8" symbolic="YES" id="1u7-6r-wmt"/>
                             <constraint firstItem="5NC-Ii-Sdy" firstAttribute="trailing" secondItem="Ked-Jl-Eot" secondAttribute="trailing" id="4XN-Q2-cgs"/>
                             <constraint firstItem="eUA-d1-bDh" firstAttribute="trailing" secondItem="Ked-Jl-Eot" secondAttribute="trailing" id="OfE-Fq-hzF"/>
-                            <constraint firstItem="5NC-Ii-Sdy" firstAttribute="top" secondItem="6SD-ji-EJd" secondAttribute="top" constant="100" id="WJM-FC-AsB"/>
+                            <constraint firstItem="5NC-Ii-Sdy" firstAttribute="top" secondItem="6SD-ji-EJd" secondAttribute="top" constant="120" id="WJM-FC-AsB"/>
                             <constraint firstItem="Kdj-zY-EmJ" firstAttribute="leading" secondItem="Ked-Jl-Eot" secondAttribute="leading" constant="30" id="Zg4-ib-b4i"/>
                             <constraint firstItem="5NC-Ii-Sdy" firstAttribute="leading" secondItem="Ked-Jl-Eot" secondAttribute="leading" id="iVN-Ap-qt6"/>
                             <constraint firstItem="eUA-d1-bDh" firstAttribute="leading" secondItem="Ked-Jl-Eot" secondAttribute="leading" id="kLf-kB-o4L"/>
@@ -449,9 +449,9 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PU7-rn-ku7">
                                                 <rect key="frame" x="21" y="67" width="344" height="559"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">We are a beautiful family, our youngest daugther, Diana, just got diagnosed for with Leukaemia. We are hopeful and sure that things will go fine but we need some help to make her undestand the situation. 
+                                                <string key="text">We are a beautiful family, our youngest daugther, Diana, just got diagnosed for with Leukaemia. We are hopeful and sure that things will go fine but we need some help to make her undestand the situation. 
 She got diagnosed with this type of cancer just a month ago, we are following all the physician indications and following the treatments but she doesn't understand why she has to go through all these or when is it going to end.
-Any message of hope, tips for going through this, a better way to explain the diagnosis, or something to make her feel slightly better in this situation would be greatly appreciated, thank you very much!. Please be kind and know that we, as a family, are going through this together and we are trying our best too.</mutableString>
+Any message of hope, tips for going through this, a better way to explain the diagnosis, or something to make her feel slightly better in this situation would be greatly appreciated, thank you very much!. Please be kind and know that we, as a family, are going through this together and we are trying our best too.</string>
                                                 <fontDescription key="fontDescription" name="GothamSSm-Book" family="Gotham SSm" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -522,6 +522,7 @@ Any message of hope, tips for going through this, a better way to explain the di
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="lRi-Pb-Ssc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZM7-wW-f8s" firstAttribute="centerX" secondItem="aUn-FV-M90" secondAttribute="centerX" id="2hE-J8-KOG"/>

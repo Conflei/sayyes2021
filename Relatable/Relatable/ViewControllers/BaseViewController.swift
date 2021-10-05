@@ -19,6 +19,7 @@ class BaseViewController: UIViewController {
         self.navigationController?.view.backgroundColor = UIColor.clear
         self.navigationController?.navigationItem.title = ""
         self.navigationItem.leftBarButtonItems = []
+        self.navigationController?.navigationBar.isUserInteractionEnabled = false
         // hide the default back buttons
          self.navigationItem.hidesBackButton = true
     }
